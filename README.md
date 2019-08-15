@@ -1,7 +1,7 @@
 # college-for-you
 
 #install dependencies with:
-npm install
+```npm install```
 
 #start server with:
-npm start
+```npm start```
