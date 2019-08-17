@@ -1,10 +1,11 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { AppLoading } from 'expo';
-import { Container } from 'native-base';
+import { Container, Header, Content } from 'native-base';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
-import Header from './components/Header';
+import MyHeader from './components/Header';
+import Home from './components/Home';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -30,8 +31,13 @@ export default class App extends React.Component {
 
     return (
       <Container>
-        <StatusBar hidden/>
-        <Header />
+        <Header>
+          <StatusBar hidden/>
+          <MyHeader />
+        </Header>
+        <Content>
+          <Home />
+        </Content>
       </Container>
     );
   }
