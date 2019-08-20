@@ -1,6 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { AppLoading } from 'expo';
+import Constants from 'expo-constants';
 import { Container, Header, Content } from 'native-base';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
@@ -30,12 +31,13 @@ export default class App extends React.Component {
     }
 
     return (
-      <Container>
-        <Header>
-          <StatusBar hidden/>
-          <MyHeader />
-        </Header>
-        <Content>
+      <Container
+        style={{
+          marginTop: Constants.statusBarHeight,
+        }}
+      >
+        <MyHeader />
+        <Content style={{ padding: 10 }}>
           <Home />
         </Content>
       </Container>

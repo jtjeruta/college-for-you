@@ -26,9 +26,10 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": "",
+    "description": "An app that helps students find the right college for them.",
     "android": {
       "package": "com.research101.collegeForYou"
-    }
+    },
+    "githubUrl": "https://github.com/jtjeruta/college-for-you.git"
   }
 }
