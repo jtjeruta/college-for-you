@@ -26,7 +26,7 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": "An app that helps students find the right college for them.",
+    "description": "An app that helps students find the right college for them in Iloilo City.",
     "android": {
       "package": "com.research101.collegeForYou"
     },
