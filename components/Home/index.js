@@ -1,5 +1,4 @@
 import React from 'react';
-import { View } from 'react-native';
 import cpu_building from '../../assets/schools/cpu_building.jpg';
 import up_building from '../../assets/schools/up_building.jpg';
 import wvsu_building from '../../assets/schools/wvsu_building.png';
