@@ -12,7 +12,7 @@ const CardImage = ({ name, thumbnail, image, motto }) => (
         <Thumbnail source={thumbnail} />
         <Body>
           <Text>{name}</Text>
-          <Text note>{motto}</Text>
+          {motto && <Text note>{motto}</Text>}
         </Body>
       </Left>
     </CardItem>
@@ -49,7 +49,7 @@ CardImage.propTypes = {
 CardImage.defaultProps = {
   name: "No name",
   thumbnail: defaultImage,
-  motto: "No motto",
+  motto: null,
   image: defaultImage
 };
 
