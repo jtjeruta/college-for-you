@@ -3,7 +3,7 @@ import { AppLoading } from 'expo';
 // import Constants from 'expo-constants';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
-import Home from './components/Home';
+import Home from './src/components/Home';
 
 import { Router, Scene, Actions } from 'react-native-router-flux'
 
