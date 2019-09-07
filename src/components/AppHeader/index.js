@@ -7,7 +7,7 @@ import Constants from 'expo-constants';
 
 const MyHeader = ({ title }) => (
   <Header
-    iosBarStyle={"light-content"}
+    iosBarStyle="light-content"
     androidStatusBarColor="rgba(0, 0, 0, 0.3)"
     style={{
       marginTop: Constants.statusBarHeight,
@@ -27,6 +27,6 @@ const MyHeader = ({ title }) => (
       </Button>
     </Right> */}
   </Header>
-)
+);
 
 export default MyHeader;

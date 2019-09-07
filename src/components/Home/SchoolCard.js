@@ -1,7 +1,12 @@
 import React from 'react';
 import { Image } from 'react-native';
-import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
-const CardImage = ({ name, thumbnail, image, motto }) => (
+import {
+  Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right,
+} from 'native-base';
+
+const CardImage = ({
+  name, thumbnail, image, motto,
+}) => (
   <Card>
     <CardItem>
       <Left>
@@ -13,7 +18,7 @@ const CardImage = ({ name, thumbnail, image, motto }) => (
       </Left>
     </CardItem>
     <CardItem cardBody>
-      <Image source={image} style={{height: 200, width: null, flex: 1}}/>
+      <Image source={image} style={{ height: 200, width: null, flex: 1 }} />
     </CardItem>
     {/* <CardItem>
       <Left>

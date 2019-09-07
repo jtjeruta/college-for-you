@@ -6,20 +6,18 @@ import School from './SchoolCard';
 
 import schools from '../../stores/Schools';
 
-const Home = () => {
-  return (
-    <Container>
-      <AppHeader />
-      <Content>
-        {schools.map((school, i) => (
-          <School
-            key={`school-${i}`}
-            {...school}
-          />
-        ))}
-      </Content>
-    </Container>
-  )
-};
+const Home = () => (
+  <Container>
+    <AppHeader />
+    <Content>
+      {schools.map((school, i) => (
+        <School
+          key={`school-${i}`}
+          {...school}
+        />
+      ))}
+    </Content>
+  </Container>
+);
 
 export default Home;
