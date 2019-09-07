@@ -1,4 +1,6 @@
 import React from 'react';
+import { Container, Content } from 'native-base';
+
 import cpu_building from '../../assets/schools/cpu_building.jpg';
 import up_building from '../../assets/schools/up_building.jpg';
 import wvsu_building from '../../assets/schools/wvsu_building.png';
@@ -31,12 +33,16 @@ const Home = () => {
     },
   ];
   return (
-    schools.map((school, i) => (
-      <School
-        key={`school-${i}`}
-        {...school}
-      />
-    ))
+    <Container>
+      <Content>
+        {schools.map((school, i) => (
+          <School
+            key={`school-${i}`}
+            {...school}
+          />
+        ))}
+      </Content>
+    </Container>
   )
 };
 
