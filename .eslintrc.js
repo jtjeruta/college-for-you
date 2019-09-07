@@ -5,6 +5,10 @@ module.exports = {
   },
   extends: [
     'airbnb',
+    "prettier",
+    "prettier/react",
+    "plugin:prettier/recommended",
+    "eslint-config-prettier"
   ],
   globals: {
     Atomics: 'readonly',
@@ -21,5 +25,6 @@ module.exports = {
     'react',
   ],
   rules: {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
   },
 };

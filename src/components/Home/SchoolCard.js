@@ -1,12 +1,10 @@
-import React from 'react';
-import { Image } from 'react-native';
-import {
-  Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right,
-} from 'native-base';
+import React from "react";
+import { Image } from "react-native";
+import { Card, CardItem, Thumbnail, Text, Left, Body } from "native-base";
 
-const CardImage = ({
-  name, thumbnail, image, motto,
-}) => (
+import defaultImage from "../../assets/schools/default-image.jpg";
+
+const CardImage = ({ name, thumbnail, image, motto }) => (
   <Card>
     <CardItem>
       <Left>
@@ -39,5 +37,19 @@ const CardImage = ({
     </CardItem> */}
   </Card>
 );
+
+CardImage.propTypes = {
+  name: React.propTypes.string,
+  thumbnail: React.propTypes.node,
+  motto: React.propTypes.string,
+  image: React.propTypes.node
+};
+
+CardImage.defaultProps = {
+  name: "No name",
+  thumbnail: defaultImage,
+  motto: "No motto",
+  image: defaultImage
+};
 
 export default CardImage;

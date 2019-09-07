@@ -1,16 +1,14 @@
-import React from 'react';
-import {
-  Header, Left, Button, Icon, Body,
-  Right, Title,
-} from 'native-base';
-import Constants from 'expo-constants';
+import React from "react";
+import { Header, Body, Title } from "native-base";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import Constants from "expo-constants";
 
 const MyHeader = ({ title }) => (
   <Header
     iosBarStyle="light-content"
     androidStatusBarColor="rgba(0, 0, 0, 0.3)"
     style={{
-      marginTop: Constants.statusBarHeight,
+      marginTop: Constants.statusBarHeight
     }}
   >
     {/* <Left>
@@ -19,7 +17,7 @@ const MyHeader = ({ title }) => (
       </Button>
     </Left> */}
     <Body>
-      <Title>{title || 'College For You'}</Title>
+      <Title>{title}</Title>
     </Body>
     {/* <Right>
       <Button transparent>
@@ -28,5 +26,13 @@ const MyHeader = ({ title }) => (
     </Right> */}
   </Header>
 );
+
+MyHeader.propTypes = {
+  title: React.propType.string
+};
+
+MyHeader.defaultProps = {
+  title: "College For You"
+};
 
 export default MyHeader;
