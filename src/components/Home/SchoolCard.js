@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Image } from "react-native";
 import { Card, CardItem, Thumbnail, Text, Left, Body } from "native-base";
 
@@ -39,10 +40,10 @@ const CardImage = ({ name, thumbnail, image, motto }) => (
 );
 
 CardImage.propTypes = {
-  name: React.propTypes.string,
-  thumbnail: React.propTypes.node,
-  motto: React.propTypes.string,
-  image: React.propTypes.node
+  name: PropTypes.string,
+  thumbnail: PropTypes.node,
+  motto: PropTypes.string,
+  image: PropTypes.node
 };
 
 CardImage.defaultProps = {

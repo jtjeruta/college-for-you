@@ -1,4 +1,5 @@
 import React from "react";
+import PropType from "prop-types";
 import { Header, Body, Title } from "native-base";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import Constants from "expo-constants";
@@ -28,7 +29,7 @@ const MyHeader = ({ title }) => (
 );
 
 MyHeader.propTypes = {
-  title: React.propType.string
+  title: PropType.string
 };
 
 MyHeader.defaultProps = {
