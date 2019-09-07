@@ -3,19 +3,23 @@ import {
   Header, Left, Button, Icon, Body,
   Right, Title,
 } from 'native-base';
+import Constants from 'expo-constants';
 
-const MyHeader = () => (
+const MyHeader = ({ title }) => (
   <Header
     iosBarStyle={"light-content"}
-    androidStatusBarColor='#000'
-    >
+    androidStatusBarColor="rgba(0, 0, 0, 0.3)"
+    style={{
+      marginTop: Constants.statusBarHeight,
+    }}
+  >
     {/* <Left>
       <Button transparent>
         <Icon name='arrow-back' />
       </Button>
     </Left> */}
     <Body>
-      <Title>College For You</Title>
+      <Title>{title || 'College For You'}</Title>
     </Body>
     {/* <Right>
       <Button transparent>

@@ -1,11 +1,8 @@
 import React from 'react';
-import { StatusBar } from 'react-native';
 import { AppLoading } from 'expo';
-import Constants from 'expo-constants';
-import { Container, Header, Content, Text, Button } from 'native-base';
+// import Constants from 'expo-constants';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
-import MyHeader from './components/Header';
 import Home from './components/Home';
 
 import { Router, Scene, Actions } from 'react-native-router-flux'
@@ -46,7 +43,7 @@ export default class App extends React.Component {
     return (
       <Router>
         <Scene key="root">
-          <Scene key="pageOne" component={Home} title="College For You" initial={true} />
+          <Scene key="pageOne" component={Home} title="College For You" initial={true} hideNavBar/>
           {/* <Scene key="pageTwo" component={TestPage} title="PageTwo" initial={true} /> */}
         </Scene>
       </Router>

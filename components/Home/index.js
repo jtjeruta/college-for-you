@@ -7,6 +7,7 @@ import wvsu_building from '../../assets/schools/wvsu_building.png';
 import cpu_logo from '../../assets/schools/cpu_logo.png';
 import up_logo from '../../assets/schools/up_logo.png';
 import wvsu_logo from '../../assets/schools/wvsu_logo.png';
+import AppHeader from '../AppHeader';
 
 
 import School from './SchoolCard';
@@ -34,6 +35,7 @@ const Home = () => {
   ];
   return (
     <Container>
+      <AppHeader />
       <Content>
         {schools.map((school, i) => (
           <School
