@@ -2,12 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Image } from "react-native";
 import { Card, CardItem, Thumbnail, Text, Left, Body } from "native-base";
+import { Actions } from "react-native-router-flux";
 
 import defaultImage from "../../assets/schools/default-image.jpg";
 
 const CardImage = ({ name, thumbnail, image, motto }) => (
   <Card>
-    <CardItem>
+    <CardItem button onPress={() => Actions.school()}>
       <Left>
         <Thumbnail source={thumbnail} />
         <Body>
@@ -16,7 +17,7 @@ const CardImage = ({ name, thumbnail, image, motto }) => (
         </Body>
       </Left>
     </CardItem>
-    <CardItem cardBody>
+    <CardItem cardBody button onPress={() => Actions.school()}>
       <Image source={image} style={{ height: 200, width: null, flex: 1 }} />
     </CardItem>
     {/* <CardItem>
