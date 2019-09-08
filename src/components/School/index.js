@@ -9,7 +9,7 @@ const School = () => {
   const school = schools.find(s => s.id === currentSchool);
   return (
     <Container>
-      <AppHeader />
+      <AppHeader addBackButton />
       <Content>
         <Text>{school.name}</Text>
       </Content>

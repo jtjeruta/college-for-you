@@ -1,10 +1,11 @@
 import React from "react";
 import PropType from "prop-types";
-import { Header, Body, Title } from "native-base";
+import { Header, Body, Title, Left, Button, Icon, Right } from "native-base";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import Constants from "expo-constants";
+import { Actions } from "react-native-router-flux";
 
-const MyHeader = ({ title }) => (
+const MyHeader = ({ title, addBackButton }) => (
   <Header
     iosBarStyle="light-content"
     androidStatusBarColor="rgba(0, 0, 0, 0.3)"
@@ -12,28 +13,32 @@ const MyHeader = ({ title }) => (
       marginTop: Constants.statusBarHeight
     }}
   >
-    {/* <Left>
-      <Button transparent>
-        <Icon name='arrow-back' />
-      </Button>
-    </Left> */}
+    {addBackButton && (
+      <Left>
+        <Button transparent onPress={() => Actions.pop()}>
+          <Icon name="arrow-back" />
+        </Button>
+      </Left>
+    )}
     <Body>
       <Title>{title}</Title>
     </Body>
-    {/* <Right>
+    <Right>
       <Button transparent>
-        <Icon name='menu' />
+        <Icon />
       </Button>
-    </Right> */}
+    </Right>
   </Header>
 );
 
 MyHeader.propTypes = {
-  title: PropType.string
+  title: PropType.string,
+  addBackButton: PropType.bool
 };
 
 MyHeader.defaultProps = {
-  title: "College For You"
+  title: "College For You",
+  addBackButton: false
 };
 
 export default MyHeader;
