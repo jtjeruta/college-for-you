@@ -10,6 +10,8 @@ import RobotoMediumFont from "native-base/Fonts/Roboto_medium.ttf";
 import Home from "./src/components/Home";
 import School from "./src/components/School";
 
+import { SchoolContextProvider } from "./src/contexts/SchoolContext";
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -36,18 +38,20 @@ export default class App extends React.Component {
     // const TestPage = () => <Text>Hello</Text>;
 
     return (
-      <Router>
-        <Scene key="root">
-          <Scene
-            key="home"
-            component={Home}
-            title="College For You"
-            initial
-            hideNavBar
-          />
-          <Scene key="school" component={School} title="PageTwo" hideNavBar />
-        </Scene>
-      </Router>
+      <SchoolContextProvider>
+        <Router>
+          <Scene key="root">
+            <Scene
+              key="home"
+              component={Home}
+              title="College For You"
+              initial
+              hideNavBar
+            />
+            <Scene key="school" component={School} title="PageTwo" hideNavBar />
+          </Scene>
+        </Router>
+      </SchoolContextProvider>
     );
   }
 }
