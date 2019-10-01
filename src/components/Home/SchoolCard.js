@@ -36,7 +36,7 @@ const CardImage = ({ id, name, thumbnail, image, motto }) => {
             </Body>
           </Left>
         </CardItem>
-        <CardItem cardBody button onPress={() => handleGoToSchool()}>
+        <CardItem cardBody>
           <Image source={image} style={{ height: 200, width: null, flex: 1 }} />
         </CardItem>
         <CardItem>
