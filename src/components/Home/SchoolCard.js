@@ -37,7 +37,7 @@ const CardImage = ({ id, name, thumbnail, image, motto }) => {
           </Left>
         </CardItem>
         <CardItem cardBody>
-          <Image source={image} style={{ height: 200, width: null, flex: 1 }} />
+          <Image source={image} style={{ height: 250, width: null, flex: 1 }} />
         </CardItem>
         <CardItem>
           {/* <Left>
