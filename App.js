@@ -1,5 +1,5 @@
 import React from "react";
-import { AppLoading } from "expo";
+import { AppLoading, ScreenOrientation } from "expo";
 import * as Font from "expo-font";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Ionicons } from "@expo/vector-icons";
@@ -26,6 +26,7 @@ export default class App extends React.Component {
       Roboto_medium: RobotoMediumFont,
       ...Ionicons.font
     });
+    await ScreenOrientation.unlockAsync();
     this.setState({ isReady: true });
   }
 
