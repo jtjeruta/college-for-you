@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Divider } from "react-native-elements";
 import { Container, Content } from "native-base";
 
 import AppHeader from "../AppHeader";
@@ -13,15 +14,18 @@ const Home = () => {
     <Container>
       <AppHeader />
       <Content>
-        {schools.map(school => (
-          <School
-            id={school.id}
-            key={school.name}
-            name={school.name}
-            thumbnail={school.thumbnail}
-            image={school.image}
-            motto={school.moto}
-          />
+        {schools.map((school, i) => (
+          <React.Fragment key={school.name}>
+            <School
+              id={school.id}
+              key={school.name}
+              name={school.name}
+              thumbnail={school.thumbnail}
+              image={school.image}
+              motto={school.moto}
+            />
+            {i < schools.length && <Divider />}
+          </React.Fragment>
         ))}
       </Content>
     </Container>

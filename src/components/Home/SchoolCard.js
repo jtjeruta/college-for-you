@@ -1,7 +1,17 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
-import { Image } from "react-native";
-import { Card, CardItem, Thumbnail, Text, Left, Body } from "native-base";
+import { Image, TouchableWithoutFeedback } from "react-native";
+import {
+  Card,
+  CardItem,
+  Thumbnail,
+  Text,
+  Left,
+  Body
+  // Button,
+  // Icon,
+  // Right
+} from "native-base";
 import { Actions } from "react-native-router-flux";
 
 import defaultImage from "../../assets/schools/default-image.jpg";
@@ -15,37 +25,36 @@ const CardImage = ({ id, name, thumbnail, image, motto }) => {
     Actions.school();
   };
   return (
-    <Card>
-      <CardItem button onPress={() => handleGoToSchool()}>
-        <Left>
-          <Thumbnail source={thumbnail} />
-          <Body>
-            <Text>{name}</Text>
-            {motto && <Text note>{motto}</Text>}
-          </Body>
-        </Left>
-      </CardItem>
-      <CardItem cardBody button onPress={() => handleGoToSchool()}>
-        <Image source={image} style={{ height: 200, width: null, flex: 1 }} />
-      </CardItem>
-      {/* <CardItem>
-        <Left>
-          <Button transparent>
-            <Icon active name="thumbs-up" />
-            <Text>12 Likes</Text>
-          </Button>
-        </Left>
-        <Body>
-          <Button transparent>
-            <Icon active name="chatbubbles" />
-            <Text>4 Comments</Text>
-          </Button>
-        </Body>
-        <Right>
-          <Text>11h ago</Text>
-        </Right>
-      </CardItem> */}
-    </Card>
+    <TouchableWithoutFeedback onPress={() => handleGoToSchool()}>
+      <Card transparent>
+        <CardItem>
+          <Left>
+            <Thumbnail source={thumbnail} />
+            <Body>
+              <Text>{name}</Text>
+              {motto && <Text note>{motto}</Text>}
+            </Body>
+          </Left>
+        </CardItem>
+        <CardItem cardBody button onPress={() => handleGoToSchool()}>
+          <Image source={image} style={{ height: 200, width: null, flex: 1 }} />
+        </CardItem>
+        <CardItem>
+          {/* <Left>
+            <Button transparent>
+              <Icon active name="thumbs-up" />
+              <Text>12 Likes</Text>
+            </Button>
+          </Left> */}
+          {/* <Body>
+            <Button transparent>
+              <Icon active name="chatbubbles" />
+              <Text>4 Comments</Text>
+            </Button>
+          </Body> */}
+        </CardItem>
+      </Card>
+    </TouchableWithoutFeedback>
   );
 };
 
