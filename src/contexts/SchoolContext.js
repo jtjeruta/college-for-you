@@ -25,7 +25,7 @@ const SchoolContextProvider = props => {
           id: 0,
           name: 'BS in Business of Administration',
           description: `
-The Bachelor Of Science In Business Administration - In The Philippines That Is Concerned With The Various Factors That Affect Businesses. Through This Major, You’ll Gain A Better Understanding Of Economic Development By Learning The Characteristics And Problems Of Less Developed Countries, The Criteria For Growth And Development, The Obstacles To Economic Growth, And The Policies For Promoting It. Listed Below Are Some Of The Courses That You May Take While Enrolled In This Program:
+The Bachelor of Science in Business Administration - in The Philippines That is Concerned With The Various Factors That Affect Businesses. Through This Major, You’ll Gain A Better Understanding of Economic Development By Learning The Characteristics and Problems of Less Developed Countries, The Criteria For Growth and Development, The Obstacles To Economic Growth, and The Policies For Promoting It. Listed Below Are Some of The Courses That You May Take While Enrolled in This Program:
 
 Basic Macroeconomics
 Basic Microeconomics
@@ -74,9 +74,9 @@ Professor
           id: 1,
           name: 'BS in Information Technology',
           description: `
-The Bachelor Of Science In Information Technology (BS IT) Is A Four-Year Degree Program That Equips Students With The Basic Ability To Conceptualize, Design And Implement Software Applications. It Prepares Students To Be IT Professionals Who Are Able To Perform Installation, Operation, Development, Maintenance, And Administration Of Computer Applications. The Goal Of The Program Is To Produce Information Technologists Who Can Assist Individuals And Organizations In Solving Problems Using Information Technology Techniques And Processes. The Bachelor Of Science In Information Technology Program Will Offer Three Professional Elective Tracks For Students:
-Network And Security
-Web And Mobile App Development
+The Bachelor of Science in Information Technology (BS IT) is A Four-Year Degree Program That Equips Students With The Basic Ability To Conceptualize, Design and Implement Software Applications. It Prepares Students To Be IT Professionals Who Are Able To Perform Installation, Operation, Development, Maintenance, and Administration of Computer Applications. The Goal of The Program is To Produce Information Technologists Who Can Assist Individuals and Organizations in Solving Problems Using Information Technology Techniques and Processes. The Bachelor of Science in Information Technology Program Will Offer Three Professional Elective Tracks For Students:
+Network and Security
+Web and Mobile App Development
 Robotics
           `
         },
@@ -121,19 +121,19 @@ Topics on Distance Learning (Elective)
           id: 3,
           name: 'Bachelor of Secondary Education',
           description:
-            'Bachelor Of Secondary Education (BSED) Is A Four Year Degree Program Designed To Prepare Students For Becoming High School Teachers. The Program Combines Both Theory And Practice In Order To Teach Students The Necessary Knowledge And Skills A High School Teacher Needs. The Program Aims To Produce Competent Teachers Who Provide A Conducive Learning Experience To Their Students'
+            'Bachelor of Secondary Education (BSED) is A Four Year Degree Program Designed To Prepare Students For Becoming High School Teachers. The Program Combines Both Theory and Practice in Order To Teach Students The Necessary Knowledge and Skills A High School Teacher Needs. The Program Aims To Produce Competent Teachers Who Provide A Conducive Learning Experience To Their Students'
         },
         {
           id: 4,
           name: 'BS in  Restaurant Management',
           description:
-            'The Bachelor Of Science In Hotel And Restaurant Management Is A Four-Year Degree Program That Equips Students With The Necessary Knowledge, Skills, And Attitude To Provide Quality Service In The Hospitality Industry. It Contains Subjects That Will Address The Needs Of Different Sectors In The Hospitality Industry Such As Culinary, Front Office, Tourism, Resort, And Hotel Operations. The Program Also Helps Students To Develop Effective Communication And Interpersonal Skills Which Are Essential In Establishing Positive Customer Relations'
+            'The Bachelor of Science in Hotel and Restaurant Management is A Four-Year Degree Program That Equips Students With The Necessary Knowledge, Skills, and Attitude To Provide Quality Service in The Hospitality Industry. It Contains Subjects That Will Address The Needs of Different Sectors in The Hospitality Industry Such As Culinary, Front Office, Tourism, Resort, and Hotel Operations. The Program Also Helps Students To Develop Effective Communication and Interpersonal Skills Which Are Essential in Establishing Positive Customer Relations'
         },
         {
           id: 5,
           name: 'BS in Computer Science',
           description: `
-The BS In Computer Science(BSCS)  Is A Four-Year Degree Program That Focuses On The Study Of Computer Algorithms And Its Implementation Through Computer Software And Hardware. It Also Equips Students With Proficiency In Designing, Writing, And Developing Computer Programs And Computer Networks; As Well As Intricacies Of Software Applications, Data Processing, Web Development, Programming, And Computer Architecture.
+The BS in Computer Science(BSCS)  is A Four-Year Degree Program That Focuses On The Study of Computer Algorithms and Its Implementation Through Computer Software and Hardware. It Also Equips Students With Proficiency in Designing, Writing, and Developing Computer Programs and Computer Networks; As Well As Intricacies of Software Applications, Data Processing, Web Development, Programming, and Computer Architecture.
 
 Application Analyst
 Applications Developer
@@ -173,7 +173,7 @@ Web Content Manager
         {
           id: 6,
           name: 'BS Civil Engineering',
-          description: `The Four-Year Curriculum Leading To The Bachelor Of Science In Civil Engineering Prepares Our Graduates To Enter Professional Practice As An Engineer Or To Continue Their Studies And Earn A Master's Or Doctoral Degree. The Degree Program Is Designed To Offer Depth In The Course Material Considered Essential For All Civil Engineers Along With The Flexibility To Select Elective Courses That Meet Students' Interests And Expose Them To The Breadth Of Civil Engineering Specialties.`
+          description: `The Four-Year Curriculum Leading To The Bachelor of Science in Civil Engineering Prepares Our Graduates To Enter Professional Practice As An Engineer Or To Continue Their Studies and Earn A Master's Or Doctoral Degree. The Degree Program is Designed To Offer Depth in The Course Material Considered Essential For All Civil Engineers Along With The Flexibility To Select Elective Courses That Meet Students' Interests and Expose Them To The Breadth of Civil Engineering Specialties.`
         }
       ]
     },
@@ -188,7 +188,7 @@ Web Content Manager
           id: 0,
           name: 'BS in Business of Administration',
           description: `
-The Bachelor Of Science In Business Administration - In The Philippines That Is Concerned With The Various Factors That Affect Businesses. Through This Major, You’ll Gain A Better Understanding Of Economic Development By Learning The Characteristics And Problems Of Less Developed Countries, The Criteria For Growth And Development, The Obstacles To Economic Growth, And The Policies For Promoting It. Listed Below Are Some Of The Courses That You May Take While Enrolled In This Program:
+The Bachelor of Science in Business Administration - in The Philippines That is Concerned With The Various Factors That Affect Businesses. Through This Major, You’ll Gain A Better Understanding of Economic Development By Learning The Characteristics and Problems of Less Developed Countries, The Criteria For Growth and Development, The Obstacles To Economic Growth, and The Policies For Promoting It. Listed Below Are Some of The Courses That You May Take While Enrolled in This Program:
 
 Basic Macroeconomics
 Basic Microeconomics
@@ -237,22 +237,22 @@ Professor
           id: 1,
           name: 'BS in Accountancy',
           description: `
-The Bachelor Of Science In Accountancy (Bsa) Is A Four-Year Degree Program In The Philippines That Is Primarily Concerned With The Effective Management Of A Person’s, Group’s, Or Company’s Financial Resources Including The Proper Ways Of Monitoring And Documenting The Flow Of Money Or Goods Within The System And The Applicable Laws Related To It. Among The Courses That You May Take Under This Program Are:
-Business Organization And Management
+The Bachelor of Science in Accountancy (Bsa) is A Four-Year Degree Program in The Philippines That is Primarily Concerned With The Effective Management of A Person’s, Group’s, Or Company’s Financial Resources Including The Proper Ways of Monitoring and Documenting The Flow of Money Or Goods Within The System and The Applicable Laws Related To It. Among The Courses That You May Take Under This Program Are:
+Business Organization and Management
 Business Statistics
-Fundamentals Of Accounting
-Financial Accounting And Reporting
-Microeconomic Theory And Practice Macroeconomic Theory And Practice
-Cost Accounting And Cost Management
-Fundamentals Of Information Systems And Systems Development
+Fundamentals of Accounting
+Financial Accounting and Reporting
+Microeconomic Theory and Practice Macroeconomic Theory and Practice
+Cost Accounting and Cost Management
+Fundamentals of Information Systems and Systems Development
 Applied Auditing
-Income Taxation Business And Transfer Tactics Sales, Agency, Labor, And Other Commercial Laws Management Consultancy
-Good Governance And Corporate Responsibility
-It Concepts And Systems Analysis And Design Accounting Systems
-Auditing In A Cis Environment Calculus For Business Financial Management
+Income Taxation Business and Transfer Tactics Sales, Agency, Labor, and Other Commercial Laws Management Consultancy
+Good Governance and Corporate Responsibility
+It Concepts and Systems Analysis and Design Accounting Systems
+Auditing in A Cis Environment Calculus For Business Financial Management
 Management Accounting
 Business Statistics
-Accounting For Governmental, Not-For-Profit Entities And Specialized Industries
+Accounting For Governmental, Not-For-Profit Entities and Specialized Industries
         `
         },
         {
@@ -260,14 +260,14 @@ Accounting For Governmental, Not-For-Profit Entities And Specialized Industries
           name: 'BS in Management',
           description: `
 IN ARCHIVES MANAGEMENT
-Contracts, Memos, E-Mail And Chat Exchanges, Video And Audio Recordings, And Maintenance Logs Can Contain Data That Can Dictate The Outcome Of A Lawsuit. For This Reason, Companies And Organizations Typically Try Their Best To Preserve Such Documents Should They Become Necessary In The Future.
-Additionally, In Some Countries, There Are Actual Laws That Require Companies To Store All Information That May Be Used For Possible Lawsuits And To Make Them Readily Available Upon Official Request.
+Contracts, Memos, E-Mail and Chat Exchanges, Video and Audio Recordings, and Maintenance Logs Can Contain Data That Can Dictate The Outcome of A Lawsuit. For This Reason, Companies and Organizations Typically Try Their Best To Preserve Such Documents Should They Become Necessary in The Future.
+Additionally, in Some Countries, There Are Actual Laws That Require Companies To Store All Information That May Be Used For Possible Lawsuits and To Make Them Readily Available Upon Official Request.
 
 IN COLLECTION MANAGEMENT
-Is The Process In Which Librarians Review All Books And Resources That Are Currently Owned By A Particular Library, Taking Into Consideration Things Like The Physical Condition Of The Books, The Timeliness Of Their Contents, And The Demand Among The Library’s Users For Them. Based On Their Findings, Librarians Will Then Decide Whether New Materials Should Be Acquired Or If Currently Owned Materials Should Be Transferred, Removed, Or Preserved.
+Is The Process in Which Librarians Review All Books and Resources That Are Currently Owned By A Particular Library, Taking Into Consideration Things Like The Physical Condition of The Books, The Timeliness of Their Contents, and The Demand Among The Library’s Users For Them. Based On Their Findings, Librarians Will Then Decide Whether New Materials Should Be Acquired Or If Currently Owned Materials Should Be Transferred, Removed, Or Preserved.
 
 IN LOGISTICS MANAGEMENT
-For Example, Companies Delivering Goods Do Not Simply Hop On A Van Or A Truck And Drive From Point A To Point B. To Ensure Efficiency, They Carefully Plan The Whole Transportation Process In Advance Taking Into Consideration Things Like Weather Forecasts, Traffic Rerouting, And Other Sources Of Potential Delays. They Also Decide On Which Mode Of Transport (Motorcycle, Van, Truck, Train, Ship, Plane) Would Be Best For A Particular Batch Of Deliveries Based On The Distance Expected To Be Traveled And The Total Amount Or Weight Of The Cargo That Needs To Be Transported.
+For Example, Companies Delivering Goods Do Not Simply Hop On A Van Or A Truck and Drive From Point A To Point B. To Ensure Efficiency, They Carefully Plan The Whole Transportation Process in Advance Taking Into Consideration Things Like Weather Forecasts, Traffic Rerouting, and Other Sources of Potential Delays. They Also Decide On Which Mode of Transport (Motorcycle, Van, Truck, Train, Ship, Plane) Would Be Best For A Particular Batch of Deliveries Based On The Distance Expected To Be Traveled and The Total Amount Or Weight of The Cargo That Needs To Be Transported.
         `
         }
       ]
@@ -283,7 +283,7 @@ For Example, Companies Delivering Goods Do Not Simply Hop On A Van Or A Truck An
           id: 0,
           name: 'BS in Business of Administration',
           description: `
-The Bachelor Of Science In Business Administration - In The Philippines That Is Concerned With The Various Factors That Affect Businesses. Through This Major, You’ll Gain A Better Understanding Of Economic Development By Learning The Characteristics And Problems Of Less Developed Countries, The Criteria For Growth And Development, The Obstacles To Economic Growth, And The Policies For Promoting It. Listed Below Are Some Of The Courses That You May Take While Enrolled In This Program:
+The Bachelor of Science in Business Administration - in The Philippines That is Concerned With The Various Factors That Affect Businesses. Through This Major, You’ll Gain A Better Understanding of Economic Development By Learning The Characteristics and Problems of Less Developed Countries, The Criteria For Growth and Development, The Obstacles To Economic Growth, and The Policies For Promoting It. Listed Below Are Some of The Courses That You May Take While Enrolled in This Program:
 
 Basic Macroeconomics
 Basic Microeconomics
@@ -332,15 +332,15 @@ Professor
           id: 1,
           name: 'BS in Information Technology',
           description: `
-The Bachelor Of Science In Information Technology (BS IT) Is A Four-Year Degree Program That Equips Students With The Basic Ability To Conceptualize, Design And Implement Software Applications. It Prepares Students To Be IT Professionals Who Are Able To Perform Installation, Operation, Development, Maintenance, And Administration Of Computer Applications. The Goal Of The Program Is To Produce Information Technologists Who Can Assist Individuals And Organizations In Solving Problems Using Information Technology Techniques And Processes. The Bachelor Of Science In Information Technology Program Will Offer Three Professional Elective Tracks For Students:
-Network And Security
-Web And Mobile App Development
+The Bachelor of Science in Information Technology (BS IT) is A Four-Year Degree Program That Equips Students With The Basic Ability To Conceptualize, Design and Implement Software Applications. It Prepares Students To Be IT Professionals Who Are Able To Perform Installation, Operation, Development, Maintenance, and Administration of Computer Applications. The Goal of The Program is To Produce Information Technologists Who Can Assist Individuals and Organizations in Solving Problems Using Information Technology Techniques and Processes. The Bachelor of Science in Information Technology Program Will Offer Three Professional Elective Tracks For Students:
+Network and Security
+Web and Mobile App Development
 Robotics
           `
         },
         {
           id: 2,
-          name: 'BACHELOR OF ELEMENTARY EDUCATION',
+          name: 'Bachelor of Elementary  Education',
           description: `
 Bachelor of Elementary Education (BEED) is a four-year degree program in the Philippines that will train you in teaching grade school students.
 BEED has two specializations:
@@ -377,40 +377,40 @@ Topics on Distance Learning (Elective)
         },
         {
           id: 3,
-          name: 'BACHELOR OF SECONDARY EDUCATION',
-          description: `Bachelor Of Secondary Education (BSED) Is A Four Year Degree Program Designed To Prepare Students For Becoming High School Teachers. The Program Combines Both Theory And Practice In Order To Teach Students The Necessary Knowledge And Skills A High School Teacher Needs. The Program Aims To Produce Competent Teachers Who Provide A Conducive Learning Experience To Their Students.`
+          name: 'Bachelor of Secondary Education',
+          description: `Bachelor of Secondary Education (BSED) is A Four Year Degree Program Designed To Prepare Students For Becoming High School Teachers. The Program Combines Both Theory and Practice in Order To Teach Students The Necessary Knowledge and Skills A High School Teacher Needs. The Program Aims To Produce Competent Teachers Who Provide A Conducive Learning Experience To Their Students.`
         },
         {
           id: 4,
-          name: 'BS IN NURSING',
+          name: 'BS in NURSING',
           description: `
-Bachelor Of Science In Nursing (BSN) Is A Four-Year Degree Program In The Philippines That Revolves Around Caring For The Sick Or Injured. This Does Not Only Involve Addressing Immediate Threats To The Patient’s Health, But Also Guiding The Patient All The Way Through Physical, Mental, And Emotional Recovery.
-As A Nursing Student You Will Be Trained To Conduct Health Assessments, Provide Patients With Preoperative, Intraoperative, And Postoperative Care, Perform Life-Saving Interventions, Respond To Disaster And Emergency Situations, And Keep Medical Documentations.
-Through The Course Of Your Study, You Will Learn How To Perform First Aid Techniques, Take Care Of Wounds,  Prepare And Administer Drugs, Feed Patients Through Intravenous Tubes, Monitor Vital Signs, And Care For Patients With Special Needs Such As Those With Physical Disabilities, Mental Illnesses (Alzheimer’s Disease), Developmental Disorders (Autism), Recurring Illnesses, And Patients Who Are Only Awaiting Death.
-In Addition To Those,  You Will Also Be Introduced To The Administrative Side Of Nursing Such As The Organizational Structures Of Hospitals, Patient Classification Systems, Delegation Of Tasks, Staffing, Scheduling, And Performance Evaluation.
-Some Examples Of Subjects That You May Take While Enrolled In This Program Include:
+Bachelor of Science in Nursing (BSN) is A Four-Year Degree Program in The Philippines That Revolves Around Caring For The Sick Or Injured. This Does Not Only Involve Addressing Immediate Threats To The Patient’s Health, But Also Guiding The Patient All The Way Through Physical, Mental, and Emotional Recovery.
+As A Nursing Student You Will Be Trained To Conduct Health Assessments, Provide Patients With Preoperative, Intraoperative, and Postoperative Care, Perform Life-Saving Interventions, Respond To Disaster and Emergency Situations, and Keep Medical Documentations.
+Through The Course of Your Study, You Will Learn How To Perform First Aid Techniques, Take Care of Wounds,  Prepare and Administer Drugs, Feed Patients Through Intravenous Tubes, Monitor Vital Signs, and Care For Patients With Special Needs Such As Those With Physical Disabilities, Mental Illnesses (Alzheimer’s Disease), Developmental Disorders (Autism), Recurring Illnesses, and Patients Who Are Only Awaiting Death.
+In Addition To Those,  You Will Also Be Introduced To The Administrative Side of Nursing Such As The Organizational Structures of Hospitals, Patient Classification Systems, Delegation of Tasks, Staffing, Scheduling, and Performance Evaluation.
+Some Examples of Subjects That You May Take While Enrolled in This Program Include:
 
-Care Of Mother, Child, And Family
+Care of Mother, Child, and Family
 Community Health Nursing
-Microbiology And Parasitology
+Microbiology and Parasitology
 Bioethics
-Care Of Mother, Child, Family, And Population Group At Risk Or With Problems
-Nutrition And Diet Therapy
+Care of Mother, Child, Family, and Population Group At Risk Or With Problems
+Nutrition and Diet Therapy
 Pharmacology
 Health Education
-Care Of Clients With Problems In Oxygenation, Fluid And Electrolyte Balance, Metabolism, And Endocrine
-Care Of Patients With Maladaptive Patterns Of Behaviour
+Care of Clients With Problems in Oxygenation, Fluid and Electrolyte Balance, Metabolism, and Endocrine
+Care of Patients With Maladaptive Patterns of Behaviour
 Competency Appraisal
-Nursing Leadership And Management
+Nursing Leadership and Management
 Nursing Research
 Biostatistics
-Aside From Taking The Courses Mentioned Above, Your School May Also Facilitate A Minimum Of 2346 Hours Of On-The-Job Training At Hospitals, Community Clinics, Or Similar Facilities In Order To Give You A Chance To Apply What You Have Learned In School In A Professional Setting.
+Aside From Taking The Courses Mentioned Above, Your School May Also Facilitate A Minimum of 2346 Hours of On-The-Job Training At Hospitals, Community Clinics, Or Similar Facilities in Order To Give You A Chance To Apply What You Have Learned in School in A Professional Setting.
           `
         },
         {
           id: 6,
-          name: 'BS IN TOURISM MANAGEMENT',
-          description: `Bachelor Of Science In Tourism Management Is A (4) Four-Year Degree Program That Provides Students A Concrete View In The Field Of Tourism. This Program Leads To Expertise In Management Of Tour-Operating Agencies, As Well As Other Jobs In The Travel, Events And Hotel Sector. It Aims To Address The Need For Professionals Who Can Help In Promoting The Tourism And Hospitality Industries In The Philippines. The Curriculum Is Designed To Develop Skills In Critical Thinking, Creative Problem Solving, Research, Intellectual Curiosity, And Operational Competencies. The Combination Of Theories Learned Inside The Classroom, Industry Immersion And On-The-Job Training Will Prepare The Students To Be Globally Competitive In Tourism Management Operations.
+          name: 'BS in Tourism Management',
+          description: `Bachelor of Science in Tourism Management is A (4) Four-Year Degree Program That Provides Students A Concrete View in The Field of Tourism. This Program Leads To Expertise in Management of Tour-Operating Agencies, As Well As Other Jobs in The Travel, Events and Hotel Sector. It Aims To Address The Need For Professionals Who Can Help in Promoting The Tourism and Hospitality Industries in The Philippines. The Curriculum is Designed To Develop Skills in Critical Thinking, Creative Problem Solving, Research, Intellectual Curiosity, and Operational Competencies. The Combination of Theories Learned Inside The Classroom, Industry Immersion and On-The-Job Training Will Prepare The Students To Be Globally Competitive in Tourism Management Operations.
 
 Jobs:
 Accommodation Manager
@@ -425,7 +425,7 @@ Restaurant Manager
 Air Cabin Crew
 Customer Service Manager
 Fire Risk Assessor
-Human Resources Officer
+Human Resources officer
 Marketing Executive
 Retail Manager
 Tour Manager
@@ -434,9 +434,9 @@ Tourism Officer
         },
         {
           id: 7,
-          name: 'BS IN HOSPITALITY MANAGEMENT',
+          name: 'BS in Hospitality Management',
           description: `
-The Bachelor Of Science In Hospitality Management Is A Four-Year Degree Program In The Philippines That Prepares Students To Have Employable Skills/Competencies At Every Academic Year Level For Them To Be Competitive In The Hospitality Industry Locally And Globally.  This Also Prepares The Students To Be Entrepreneurs. This Curriculum Includes Laboratory Experiences As Well As Local Or International Internship Requirement In The Industry.
+The Bachelor of Science in Hospitality Management is A Four-Year Degree Program in The Philippines That Prepares Students To Have Employable Skills/Competencies At Every Academic Year Level For Them To Be Competitive in The Hospitality Industry Locally and Globally.  This Also Prepares The Students To Be Entrepreneurs. This Curriculum Includes Laboratory Experiences As Well As Local Or International Internship Requirement in The Industry.
 
 Hotel and Restaurant Management
 Food and Beverage Service Attendant
