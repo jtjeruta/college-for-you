@@ -1,16 +1,16 @@
-import React from "react";
-import { AppLoading, ScreenOrientation } from "expo";
-import * as Font from "expo-font";
+import React from 'react';
+import { AppLoading, ScreenOrientation } from 'expo';
+import * as Font from 'expo-font';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { Ionicons } from "@expo/vector-icons";
-import { Router, Scene } from "react-native-router-flux";
-import RobotoFont from "native-base/Fonts/Roboto.ttf";
-import RobotoMediumFont from "native-base/Fonts/Roboto_medium.ttf";
+import { Ionicons } from '@expo/vector-icons';
+import { Router, Scene } from 'react-native-router-flux';
+import RobotoFont from 'native-base/Fonts/Roboto.ttf';
+import RobotoMediumFont from 'native-base/Fonts/Roboto_medium.ttf';
 
-import Home from "./src/components/Home";
-import School from "./src/components/School";
+import Home from './src/components/Home';
+import School from './src/components/School';
 
-import { SchoolContextProvider } from "./src/contexts/SchoolContext";
+import { SchoolContextProvider } from './src/contexts/SchoolContext';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -35,8 +35,6 @@ export default class App extends React.Component {
     if (!isReady) {
       return <AppLoading />;
     }
-
-    // const TestPage = () => <Text>Hello</Text>;
 
     return (
       <SchoolContextProvider>

@@ -19,20 +19,10 @@ import { SchoolContext } from '../../contexts/SchoolContext';
 const School = () => {
   const { schools, currentSchool } = useContext(SchoolContext);
   const [search, setSearch] = useState('');
-  const [keyboardDidShowListener, setKeyboardDidShowListener] = useState();
-  const [keyboardDidHideListener, setKeyboardDidHideListener] = useState();
   const [keyboardDidShow, setKeyboardDidShow] = useState(false);
   useEffect(() => {
-    setKeyboardDidShowListener(
-      Keyboard.addListener('keyboardDidShow', () => setKeyboardDidShow(true))
-    );
-    setKeyboardDidHideListener(
-      Keyboard.addListener('keyboardDidHide', () => setKeyboardDidShow(false))
-    );
-    return () => {
-      keyboardDidShowListener.remove();
-      keyboardDidHideListener.remove();
-    };
+    Keyboard.addListener('keyboardDidShow', () => setKeyboardDidShow(true));
+    Keyboard.addListener('keyboardDidHide', () => setKeyboardDidShow(false));
   }, []);
   const school = schools.find(s => s.id === currentSchool);
   const courses = school.courses.filter(course =>
@@ -65,7 +55,9 @@ const School = () => {
           <List>
             {courses.map(course => (
               <ListItem key={`course-${course.name}`}>
-                <Text>{course.name}</Text>
+                <Text style={{ textTransform: 'uppercase' }}>
+                  {course.name}
+                </Text>
               </ListItem>
             ))}
           </List>
