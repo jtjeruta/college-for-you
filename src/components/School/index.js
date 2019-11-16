@@ -25,9 +25,9 @@ const School = () => {
     Keyboard.addListener('keyboardDidHide', () => setKeyboardDidShow(false));
   }, []);
   const school = schools.find(s => s.id === currentSchool);
-  const courses = school.courses.filter(course =>
-    course.name.toLowerCase().includes(search)
-  );
+  const courses = school.courses
+    .sort((a, b) => b.name.localeCompare(a.name))
+    .filter(course => course.name.toLowerCase().includes(search));
   return (
     <Container>
       <AppHeader addBackButton />
