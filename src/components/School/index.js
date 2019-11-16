@@ -1,5 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Image, View, Keyboard } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 import {
   Container,
   Content,
@@ -17,7 +18,9 @@ import AppHeader from '../AppHeader';
 import { SchoolContext } from '../../contexts/SchoolContext';
 
 const School = () => {
-  const { schools, currentSchool } = useContext(SchoolContext);
+  const { schools, currentSchool, setCurrentCourse } = useContext(
+    SchoolContext
+  );
   const [search, setSearch] = useState('');
   const [keyboardDidShow, setKeyboardDidShow] = useState(false);
   useEffect(() => {
@@ -54,7 +57,13 @@ const School = () => {
         ) : (
           <List>
             {courses.map(course => (
-              <ListItem key={`course-${course.name}`}>
+              <ListItem
+                key={`course-${course.name}`}
+                onPress={() => {
+                  setCurrentCourse(course.id);
+                  Actions.course();
+                }}
+              >
                 <Text style={{ textTransform: 'uppercase' }}>
                   {course.name}
                 </Text>

@@ -12,6 +12,7 @@ const SchoolContext = createContext();
 
 const SchoolContextProvider = props => {
   const [currentSchool, setCurrentSchool] = useState(null);
+  const [currentCourse, setCurrentCourse] = useState(null);
   const [schools, setSchools] = useState([
     {
       id: 0,
@@ -21,9 +22,11 @@ const SchoolContextProvider = props => {
       motto: 'Scientia et Fides',
       courses: [
         {
+          id: 0,
           name: 'BS in Business of Administration',
           description: `
 The Bachelor Of Science In Business Administration - In The Philippines That Is Concerned With The Various Factors That Affect Businesses. Through This Major, You’ll Gain A Better Understanding Of Economic Development By Learning The Characteristics And Problems Of Less Developed Countries, The Criteria For Growth And Development, The Obstacles To Economic Growth, And The Policies For Promoting It. Listed Below Are Some Of The Courses That You May Take While Enrolled In This Program:
+
 Basic Macroeconomics
 Basic Microeconomics
 Accounting II
@@ -55,6 +58,7 @@ Entrepreneurial Management (Elective)
 Special Topics in Business Economics (Elective)
 Feasibility Study (Elective)
 Aside from studying the subjects mentioned above, you may also undergo an On the Job Training that will help you understand the practical applications of the things you’ll learn in school.
+
 CAREERS
 Graduates of Bachelor of Science in Business Administration Major in Business Economics
 are free to apply for any of the following positions:
@@ -67,6 +71,7 @@ Professor
           `
         },
         {
+          id: 1,
           name: 'BS in Information Technology',
           description: `
 The Bachelor Of Science In Information Technology (BS IT) Is A Four-Year Degree Program That Equips Students With The Basic Ability To Conceptualize, Design And Implement Software Applications. It Prepares Students To Be IT Professionals Who Are Able To Perform Installation, Operation, Development, Maintenance, And Administration Of Computer Applications. The Goal Of The Program Is To Produce Information Technologists Who Can Assist Individuals And Organizations In Solving Problems Using Information Technology Techniques And Processes. The Bachelor Of Science In Information Technology Program Will Offer Three Professional Elective Tracks For Students:
@@ -76,6 +81,7 @@ Robotics
           `
         },
         {
+          id: 2,
           name: 'Bachelor of Elementary Education',
           description: `
 Bachelor of Elementary Education (BEED) is a four-year degree program in the Philippines that will train you in teaching grade school students.
@@ -84,6 +90,7 @@ Bachelor of Elementary Education Major in Preschool Education
 Bachelor in Elementary Education Major in Special Education
 Enrolling in either of these programs will help you learn about the basic concepts and theories of teaching, the techniques for simplifying learning, and the effect of child and adolescent development on students’ ability to learn.
 Some examples of the courses that you may take as a BEED student include:
+
 Science
 Mathematics
 English
@@ -111,19 +118,23 @@ Topics on Distance Learning (Elective)
           `
         },
         {
+          id: 3,
           name: 'Bachelor of Secondary Education',
           description:
             'Bachelor Of Secondary Education (BSED) Is A Four Year Degree Program Designed To Prepare Students For Becoming High School Teachers. The Program Combines Both Theory And Practice In Order To Teach Students The Necessary Knowledge And Skills A High School Teacher Needs. The Program Aims To Produce Competent Teachers Who Provide A Conducive Learning Experience To Their Students'
         },
         {
+          id: 4,
           name: 'BS in  Restaurant Management',
           description:
             'The Bachelor Of Science In Hotel And Restaurant Management Is A Four-Year Degree Program That Equips Students With The Necessary Knowledge, Skills, And Attitude To Provide Quality Service In The Hospitality Industry. It Contains Subjects That Will Address The Needs Of Different Sectors In The Hospitality Industry Such As Culinary, Front Office, Tourism, Resort, And Hotel Operations. The Program Also Helps Students To Develop Effective Communication And Interpersonal Skills Which Are Essential In Establishing Positive Customer Relations'
         },
         {
+          id: 5,
           name: 'BS in Computer Science',
           description: `
 The BS In Computer Science(BSCS)  Is A Four-Year Degree Program That Focuses On The Study Of Computer Algorithms And Its Implementation Through Computer Software And Hardware. It Also Equips Students With Proficiency In Designing, Writing, And Developing Computer Programs And Computer Networks; As Well As Intricacies Of Software Applications, Data Processing, Web Development, Programming, And Computer Architecture.
+
 Application Analyst
 Applications Developer
 CAD Technician
@@ -145,8 +156,6 @@ UX Designer
 VFX Artist
 Web Designer
 Web Developer
-
-
 Digital Copywriter
 IT Sales Professional
 IT Trainer
@@ -162,6 +171,7 @@ Web Content Manager
           `
         },
         {
+          id: 6,
           name: 'BS Civil Engineering',
           description: `The Four-Year Curriculum Leading To The Bachelor Of Science In Civil Engineering Prepares Our Graduates To Enter Professional Practice As An Engineer Or To Continue Their Studies And Earn A Master's Or Doctoral Degree. The Degree Program Is Designed To Offer Depth In The Course Material Considered Essential For All Civil Engineers Along With The Flexibility To Select Elective Courses That Meet Students' Interests And Expose Them To The Breadth Of Civil Engineering Specialties.`
         }
@@ -175,9 +185,11 @@ Web Content Manager
       motto: 'Honor and Excellence',
       courses: [
         {
+          id: 0,
           name: 'BS in Business of Administration',
           description: `
 The Bachelor Of Science In Business Administration - In The Philippines That Is Concerned With The Various Factors That Affect Businesses. Through This Major, You’ll Gain A Better Understanding Of Economic Development By Learning The Characteristics And Problems Of Less Developed Countries, The Criteria For Growth And Development, The Obstacles To Economic Growth, And The Policies For Promoting It. Listed Below Are Some Of The Courses That You May Take While Enrolled In This Program:
+
 Basic Macroeconomics
 Basic Microeconomics
 Accounting II
@@ -209,6 +221,7 @@ Entrepreneurial Management (Elective)
 Special Topics in Business Economics (Elective)
 Feasibility Study (Elective)
 Aside from studying the subjects mentioned above, you may also undergo an On the Job Training that will help you understand the practical applications of the things you’ll learn in school.
+
 CAREERS
 Graduates of Bachelor of Science in Business Administration Major in Business Economics
 are free to apply for any of the following positions:
@@ -221,6 +234,7 @@ Professor
           `
         },
         {
+          id: 1,
           name: 'BS in Accountancy',
           description: `
 The Bachelor Of Science In Accountancy (Bsa) Is A Four-Year Degree Program In The Philippines That Is Primarily Concerned With The Effective Management Of A Person’s, Group’s, Or Company’s Financial Resources Including The Proper Ways Of Monitoring And Documenting The Flow Of Money Or Goods Within The System And The Applicable Laws Related To It. Among The Courses That You May Take Under This Program Are:
@@ -242,6 +256,7 @@ Accounting For Governmental, Not-For-Profit Entities And Specialized Industries
         `
         },
         {
+          id: 2,
           name: 'BS in Management',
           description: `
 IN ARCHIVES MANAGEMENT
@@ -265,9 +280,11 @@ For Example, Companies Delivering Goods Do Not Simply Hop On A Van Or A Truck An
       motto: 'Servitium, Concordia, Excellentia',
       courses: [
         {
+          id: 0,
           name: 'BS in Business of Administration',
           description: `
 The Bachelor Of Science In Business Administration - In The Philippines That Is Concerned With The Various Factors That Affect Businesses. Through This Major, You’ll Gain A Better Understanding Of Economic Development By Learning The Characteristics And Problems Of Less Developed Countries, The Criteria For Growth And Development, The Obstacles To Economic Growth, And The Policies For Promoting It. Listed Below Are Some Of The Courses That You May Take While Enrolled In This Program:
+
 Basic Macroeconomics
 Basic Microeconomics
 Accounting II
@@ -299,6 +316,7 @@ Entrepreneurial Management (Elective)
 Special Topics in Business Economics (Elective)
 Feasibility Study (Elective)
 Aside from studying the subjects mentioned above, you may also undergo an On the Job Training that will help you understand the practical applications of the things you’ll learn in school.
+
 CAREERS
 Graduates of Bachelor of Science in Business Administration Major in Business Economics
 are free to apply for any of the following positions:
@@ -311,6 +329,7 @@ Professor
       `
         },
         {
+          id: 1,
           name: 'BS in Information Technology',
           description: `
 The Bachelor Of Science In Information Technology (BS IT) Is A Four-Year Degree Program That Equips Students With The Basic Ability To Conceptualize, Design And Implement Software Applications. It Prepares Students To Be IT Professionals Who Are Able To Perform Installation, Operation, Development, Maintenance, And Administration Of Computer Applications. The Goal Of The Program Is To Produce Information Technologists Who Can Assist Individuals And Organizations In Solving Problems Using Information Technology Techniques And Processes. The Bachelor Of Science In Information Technology Program Will Offer Three Professional Elective Tracks For Students:
@@ -320,6 +339,7 @@ Robotics
           `
         },
         {
+          id: 2,
           name: 'BACHELOR OF ELEMENTARY EDUCATION',
           description: `
 Bachelor of Elementary Education (BEED) is a four-year degree program in the Philippines that will train you in teaching grade school students.
@@ -328,6 +348,7 @@ Bachelor of Elementary Education Major in Preschool Education
 Bachelor in Elementary Education Major in Special Education
 Enrolling in either of these programs will help you learn about the basic concepts and theories of teaching, the techniques for simplifying learning, and the effect of child and adolescent development on students’ ability to learn.
 Some examples of the courses that you may take as a BEED student include:
+
 Science
 Mathematics
 English
@@ -355,10 +376,12 @@ Topics on Distance Learning (Elective)
           `
         },
         {
+          id: 3,
           name: 'BACHELOR OF SECONDARY EDUCATION',
           description: `Bachelor Of Secondary Education (BSED) Is A Four Year Degree Program Designed To Prepare Students For Becoming High School Teachers. The Program Combines Both Theory And Practice In Order To Teach Students The Necessary Knowledge And Skills A High School Teacher Needs. The Program Aims To Produce Competent Teachers Who Provide A Conducive Learning Experience To Their Students.`
         },
         {
+          id: 4,
           name: 'BS IN NURSING',
           description: `
 Bachelor Of Science In Nursing (BSN) Is A Four-Year Degree Program In The Philippines That Revolves Around Caring For The Sick Or Injured. This Does Not Only Involve Addressing Immediate Threats To The Patient’s Health, But Also Guiding The Patient All The Way Through Physical, Mental, And Emotional Recovery.
@@ -366,6 +389,7 @@ As A Nursing Student You Will Be Trained To Conduct Health Assessments, Provide 
 Through The Course Of Your Study, You Will Learn How To Perform First Aid Techniques, Take Care Of Wounds,  Prepare And Administer Drugs, Feed Patients Through Intravenous Tubes, Monitor Vital Signs, And Care For Patients With Special Needs Such As Those With Physical Disabilities, Mental Illnesses (Alzheimer’s Disease), Developmental Disorders (Autism), Recurring Illnesses, And Patients Who Are Only Awaiting Death.
 In Addition To Those,  You Will Also Be Introduced To The Administrative Side Of Nursing Such As The Organizational Structures Of Hospitals, Patient Classification Systems, Delegation Of Tasks, Staffing, Scheduling, And Performance Evaluation.
 Some Examples Of Subjects That You May Take While Enrolled In This Program Include:
+
 Care Of Mother, Child, And Family
 Community Health Nursing
 Microbiology And Parasitology
@@ -384,8 +408,10 @@ Aside From Taking The Courses Mentioned Above, Your School May Also Facilitate A
           `
         },
         {
+          id: 6,
           name: 'BS IN TOURISM MANAGEMENT',
           description: `Bachelor Of Science In Tourism Management Is A (4) Four-Year Degree Program That Provides Students A Concrete View In The Field Of Tourism. This Program Leads To Expertise In Management Of Tour-Operating Agencies, As Well As Other Jobs In The Travel, Events And Hotel Sector. It Aims To Address The Need For Professionals Who Can Help In Promoting The Tourism And Hospitality Industries In The Philippines. The Curriculum Is Designed To Develop Skills In Critical Thinking, Creative Problem Solving, Research, Intellectual Curiosity, And Operational Competencies. The Combination Of Theories Learned Inside The Classroom, Industry Immersion And On-The-Job Training Will Prepare The Students To Be Globally Competitive In Tourism Management Operations.
+
 Jobs:
 Accommodation Manager
 Catering Manager
@@ -407,9 +433,11 @@ Tourism Officer
           `
         },
         {
+          id: 7,
           name: 'BS IN HOSPITALITY MANAGEMENT',
           description: `
 The Bachelor Of Science In Hospitality Management Is A Four-Year Degree Program In The Philippines That Prepares Students To Have Employable Skills/Competencies At Every Academic Year Level For Them To Be Competitive In The Hospitality Industry Locally And Globally.  This Also Prepares The Students To Be Entrepreneurs. This Curriculum Includes Laboratory Experiences As Well As Local Or International Internship Requirement In The Industry.
+
 Hotel and Restaurant Management
 Food and Beverage Service Attendant
 Bartender
@@ -449,7 +477,14 @@ Professor
   ]);
   return (
     <SchoolContext.Provider
-      value={{ schools, setSchools, currentSchool, setCurrentSchool }}
+      value={{
+        schools,
+        setSchools,
+        currentSchool,
+        setCurrentSchool,
+        currentCourse,
+        setCurrentCourse
+      }}
     >
       {props.children}
     </SchoolContext.Provider>

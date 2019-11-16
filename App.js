@@ -9,6 +9,7 @@ import RobotoMediumFont from 'native-base/Fonts/Roboto_medium.ttf';
 
 import Home from './src/components/Home';
 import School from './src/components/School';
+import Course from './src/components/Course';
 
 import { SchoolContextProvider } from './src/contexts/SchoolContext';
 
@@ -47,7 +48,8 @@ export default class App extends React.Component {
               initial
               hideNavBar
             />
-            <Scene key="school" component={School} title="PageTwo" hideNavBar />
+            <Scene key="school" component={School} hideNavBar />
+            <Scene key="course" component={Course} hideNavBar />
           </Scene>
         </Router>
       </SchoolContextProvider>
