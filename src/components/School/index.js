@@ -44,14 +44,17 @@ const School = () => {
             </View>
           </>
         )}
-        <Form style={{ marginTop: 50 }}>
+        <Text style={{ marginLeft: 15, marginTop: 50, fontSize: 24 }}>
+          Available Courses
+        </Text>
+        <Form>
           <Item>
-            <Label>Find Courses</Label>
+            <Label>Find Course: </Label>
             <Input onChangeText={e => setSearch(e)} />
           </Item>
         </Form>
         {courses.length <= 0 ? (
-          <View style={{ padding: 30, color: 'dcdcdc' }}>
+          <View style={{ padding: 30, color: '#dcdcdc' }}>
             <Text>No courses found...</Text>
           </View>
         ) : (
