@@ -7,6 +7,9 @@ import wvsuBuilding from '../assets/schools/wvsu_building.png';
 import cpuLogo from '../assets/schools/cpu_logo.png';
 import upLogo from '../assets/schools/up_logo.png';
 import wvsuLogo from '../assets/schools/wvsu_logo.png';
+import cpuLocation from '../assets/schools/cpu_location.png';
+import upvLocation from '../assets/schools/upv_location.png';
+import wvsuLocation from '../assets/schools/wvsu_location.png';
 
 const SchoolContext = createContext();
 
@@ -20,6 +23,7 @@ const SchoolContextProvider = props => {
       thumbnail: cpuLogo,
       image: cpuBuilding,
       motto: 'Scientia et Fides',
+      location: cpuLocation,
       courses: [
         {
           id: 0,
@@ -183,6 +187,7 @@ Web Content Manager
       thumbnail: upLogo,
       image: upBuilding,
       motto: 'Honor and Excellence',
+      location: upvLocation,
       courses: [
         {
           id: 0,
@@ -278,6 +283,7 @@ For Example, Companies Delivering Goods Do Not Simply Hop On A Van Or A Truck an
       thumbnail: wvsuLogo,
       image: wvsuBuilding,
       motto: 'Servitium, Concordia, Excellentia',
+      location: wvsuLocation,
       courses: [
         {
           id: 0,

@@ -42,6 +42,13 @@ const School = () => {
               <Thumbnail source={school.thumbnail} large />
               <Text>{school.name}</Text>
             </View>
+            <Text style={{ marginLeft: 15, marginTop: 50, fontSize: 24 }}>
+              Location
+            </Text>
+            <Image
+              source={school.location}
+              style={{ height: 250, width: '100%' }}
+            />
           </>
         )}
         <Text style={{ marginLeft: 15, marginTop: 50, fontSize: 24 }}>
@@ -67,9 +74,7 @@ const School = () => {
                   Actions.course();
                 }}
               >
-                <Text style={{ textTransform: 'uppercase' }}>
-                  {course.name}
-                </Text>
+                <Text>{course.name}</Text>
               </ListItem>
             ))}
           </List>
