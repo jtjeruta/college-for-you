@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import { Container, Content, Text } from 'native-base';
+import { Image, View } from 'react-native';
+import { Container, Content, Text, Thumbnail } from 'native-base';
 import AppHeader from '../AppHeader';
 
 import { SchoolContext } from '../../contexts/SchoolContext';
@@ -11,7 +12,11 @@ const School = () => {
     <Container>
       <AppHeader addBackButton />
       <Content>
-        <Text>{school.name}</Text>
+        <Image source={school.image} style={{ height: 150 }} />
+        <View alignItems="center" style={{ marginTop: -40 }}>
+          <Thumbnail source={school.thumbnail} large />
+          <Text>{school.name}</Text>
+        </View>
       </Content>
     </Container>
   );
