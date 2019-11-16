@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
-import { Divider } from "react-native-elements";
-import { Container, Content } from "native-base";
+import React, { useContext } from 'react';
+import { Divider } from 'react-native-elements';
+import { Container, Content } from 'native-base';
 
-import AppHeader from "../AppHeader";
-import School from "./SchoolCard";
+import AppHeader from '../AppHeader';
+import School from './SchoolCard';
 
-import { SchoolContext } from "../../contexts/SchoolContext";
+import { SchoolContext } from '../../contexts/SchoolContext';
 
 const Home = () => {
   const { schools } = useContext(SchoolContext);

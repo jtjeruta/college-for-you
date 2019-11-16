@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import PropTypes from "prop-types";
-import { Image, TouchableWithoutFeedback } from "react-native";
+import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
+import { Image, TouchableWithoutFeedback } from 'react-native';
 import {
   Card,
   CardItem,
@@ -11,12 +11,12 @@ import {
   // Button,
   // Icon,
   // Right
-} from "native-base";
-import { Actions } from "react-native-router-flux";
+} from 'native-base';
+import { Actions } from 'react-native-router-flux';
 
-import defaultImage from "../../assets/schools/default-image.jpg";
+import defaultImage from '../../assets/schools/default-image.jpg';
 
-import { SchoolContext } from "../../contexts/SchoolContext";
+import { SchoolContext } from '../../contexts/SchoolContext';
 
 const CardImage = ({ id, name, thumbnail, image, motto }) => {
   const { setCurrentSchool } = useContext(SchoolContext);
@@ -68,7 +68,7 @@ CardImage.propTypes = {
 
 CardImage.defaultProps = {
   id: null,
-  name: "No name",
+  name: 'No name',
   thumbnail: defaultImage,
   motto: null,
   image: defaultImage

@@ -1,9 +1,9 @@
-import React from "react";
-import PropType from "prop-types";
-import { Header, Body, Title, Left, Button, Icon, Right } from "native-base";
+import React from 'react';
+import PropType from 'prop-types';
+import { Header, Body, Title, Left, Button, Icon, Right } from 'native-base';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import Constants from "expo-constants";
-import { Actions } from "react-native-router-flux";
+import Constants from 'expo-constants';
+import { Actions } from 'react-native-router-flux';
 
 const MyHeader = ({ title, addBackButton }) => (
   <Header
@@ -37,7 +37,7 @@ MyHeader.propTypes = {
 };
 
 MyHeader.defaultProps = {
-  title: "College For You",
+  title: 'College For You',
   addBackButton: false
 };
 

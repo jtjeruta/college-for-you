@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { Container, Content, Text } from "native-base";
-import AppHeader from "../AppHeader";
+import React, { useContext } from 'react';
+import { Container, Content, Text } from 'native-base';
+import AppHeader from '../AppHeader';
 
-import { SchoolContext } from "../../contexts/SchoolContext";
+import { SchoolContext } from '../../contexts/SchoolContext';
 
 const School = () => {
   const { schools, currentSchool } = useContext(SchoolContext);
