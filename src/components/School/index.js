@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Image, View, Keyboard } from 'react-native';
+import { Image, View, Keyboard, Modal, TouchableHighlight } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import {
   Container,
@@ -23,6 +23,7 @@ const School = () => {
   );
   const [search, setSearch] = useState('');
   const [keyboardDidShow, setKeyboardDidShow] = useState(false);
+  const [modal, setModal] = useState(false);
   useEffect(() => {
     Keyboard.addListener('keyboardDidShow', () => setKeyboardDidShow(true));
     Keyboard.addListener('keyboardDidHide', () => setKeyboardDidShow(false));
@@ -45,10 +46,16 @@ const School = () => {
             <Text style={{ marginLeft: 15, marginTop: 50, fontSize: 24 }}>
               Location
             </Text>
-            <Image
-              source={school.location}
-              style={{ height: 250, width: '100%' }}
-            />
+            <TouchableHighlight
+              onPress={() => {
+                setModal(true);
+              }}
+            >
+              <Image
+                source={school.location}
+                style={{ height: 250, width: '100%' }}
+              />
+            </TouchableHighlight>
           </>
         )}
         <Text style={{ marginLeft: 15, marginTop: 50, fontSize: 24 }}>
@@ -80,6 +87,26 @@ const School = () => {
           </List>
         )}
       </Content>
+      {modal && (
+        <Modal visible={modal} transparent={false}>
+          <TouchableHighlight
+            onPress={() => {
+              setModal(false);
+            }}
+          >
+            <View
+              flexDirection="row"
+              alignItems="center"
+              style={{ height: '100%' }}
+            >
+              <Image
+                source={school.location}
+                style={{ width: '100%', height: 250 }}
+              />
+            </View>
+          </TouchableHighlight>
+        </Modal>
+      )}
     </Container>
   );
 };
