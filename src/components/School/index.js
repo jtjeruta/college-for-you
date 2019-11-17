@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Image, View, Keyboard, Modal, TouchableHighlight } from 'react-native';
 import { Actions } from 'react-native-router-flux';
+import ImageViewer from 'react-native-image-zoom-viewer';
 import {
   Container,
   Content,
@@ -89,22 +90,11 @@ const School = () => {
       </Content>
       {modal && (
         <Modal visible={modal} transparent={false}>
-          <TouchableHighlight
-            onPress={() => {
-              setModal(false);
-            }}
-          >
-            <View
-              flexDirection="row"
-              alignItems="center"
-              style={{ height: '100%' }}
-            >
-              <Image
-                source={school.location}
-                style={{ width: '100%', height: 250 }}
-              />
-            </View>
-          </TouchableHighlight>
+          <ImageViewer
+            enableSwipeDown
+            imageUrls={[{ props: { url: '', source: school.location } }]}
+            onCancel={() => setModal(false)}
+          />
         </Modal>
       )}
     </Container>

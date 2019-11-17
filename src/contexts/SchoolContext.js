@@ -243,6 +243,7 @@ Professor
           name: 'BS in Accountancy',
           description: `
 The Bachelor of Science in Accountancy (Bsa) is A Four-Year Degree Program in The Philippines That is Primarily Concerned With The Effective Management of A Person’s, Group’s, Or Company’s Financial Resources Including The Proper Ways of Monitoring and Documenting The Flow of Money Or Goods Within The System and The Applicable Laws Related To It. Among The Courses That You May Take Under This Program Are:
+
 Business Organization and Management
 Business Statistics
 Fundamentals of Accounting
@@ -326,6 +327,7 @@ Aside from studying the subjects mentioned above, you may also undergo an On the
 CAREERS
 Graduates of Bachelor of Science in Business Administration Major in Business Economics
 are free to apply for any of the following positions:
+
 Management Trainee
 Research Assistant
 Field Researcher
@@ -388,7 +390,7 @@ Topics on Distance Learning (Elective)
         },
         {
           id: 4,
-          name: 'BS in NURSING',
+          name: 'BS in Nursing',
           description: `
 Bachelor of Science in Nursing (BSN) is A Four-Year Degree Program in The Philippines That Revolves Around Caring For The Sick Or Injured. This Does Not Only Involve Addressing Immediate Threats To The Patient’s Health, But Also Guiding The Patient All The Way Through Physical, Mental, and Emotional Recovery.
 As A Nursing Student You Will Be Trained To Conduct Health Assessments, Provide Patients With Preoperative, Intraoperative, and Postoperative Care, Perform Life-Saving Interventions, Respond To Disaster and Emergency Situations, and Keep Medical Documentations.
@@ -410,6 +412,7 @@ Competency Appraisal
 Nursing Leadership and Management
 Nursing Research
 Biostatistics
+
 Aside From Taking The Courses Mentioned Above, Your School May Also Facilitate A Minimum of 2346 Hours of On-The-Job Training At Hospitals, Community Clinics, Or Similar Facilities in Order To Give You A Chance To Apply What You Have Learned in School in A Professional Setting.
           `
         },
