@@ -32,7 +32,7 @@ const School = () => {
   const school = schools.find(s => s.id === currentSchool);
   const courses = school.courses
     .sort((a, b) => b.name.localeCompare(a.name))
-    .filter(course => course.name.toLowerCase().includes(search));
+    .filter(course => course.name.toLowerCase().includes(search.toLowerCase()));
   return (
     <Container>
       <AppHeader addBackButton />
@@ -89,7 +89,11 @@ const School = () => {
         )}
       </Content>
       {modal && (
-        <Modal visible={modal} transparent={false}>
+        <Modal
+          visible={modal}
+          transparent={false}
+          onRequestClose={() => setModal(false)}
+        >
           <ImageViewer
             enableSwipeDown
             imageUrls={[{ props: { url: '', source: school.location } }]}
