@@ -12,6 +12,7 @@ import School from './src/components/School';
 import Course from './src/components/Course';
 
 import { SchoolContextProvider } from './src/contexts/SchoolContext';
+import Disclaimer from './src/components/Disclaimer';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -41,11 +42,11 @@ export default class App extends React.Component {
       <SchoolContextProvider>
         <Router>
           <Scene key="root">
+            <Scene key="disclaimer" component={Disclaimer} hideNavBar initial />
             <Scene
               key="home"
               component={Home}
               title="College For You"
-              initial
               hideNavBar
             />
             <Scene key="school" component={School} hideNavBar />
