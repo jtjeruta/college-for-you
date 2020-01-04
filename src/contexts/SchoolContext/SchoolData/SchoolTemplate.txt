@@ -1,0 +1,22 @@
+import Building from '../../../assets/schools/';
+import Logo from '../../../assets/schools/';
+import Location from '../../../assets/schools/';
+
+
+const data = {
+  id: 0,
+  name: '',
+  thumbnail: Logo,
+  image: Building,
+  motto: '',
+  location: Location,
+  courses: [
+    {
+      id: 0,
+      name: 'BS in Business of Administration',
+      description: ``
+    }
+  ]
+}
+
+export default data;
