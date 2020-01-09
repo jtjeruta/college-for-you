@@ -6,13 +6,14 @@ import WVSU from './SchoolData/WVSU';
 import WIT from './SchoolData/WIT';
 import JBL from './SchoolData/JBL';
 import USA from './SchoolData/USA';
+import ISAT from './SchoolData/ISAT';
 
 const SchoolContext = createContext();
 
 const SchoolContextProvider = props => {
   const [currentSchool, setCurrentSchool] = useState(null);
   const [currentCourse, setCurrentCourse] = useState(null);
-  const [schools, setSchools] = useState([CPU, UPV, WVSU, WIT, JBL, USA]);
+  const [schools, setSchools] = useState([CPU, UPV, WVSU, WIT, JBL, USA, ISAT]);
   return (
     <SchoolContext.Provider
       value={{
