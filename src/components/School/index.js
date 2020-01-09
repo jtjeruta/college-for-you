@@ -86,7 +86,9 @@ const School = () => {
                   Actions.course();
                 }}
               >
-                <Text>{course.name}</Text>
+                <Text style={{ textTransform: 'capitalize' }}>
+                  {course.name}
+                </Text>
               </ListItem>
             ))}
           </List>
