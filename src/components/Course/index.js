@@ -12,7 +12,7 @@ const School = () => {
   const description = course.description
     .toLowerCase()
     .split('.')
-    .map((sentence, i) => {
+    .map(sentence => {
       const head = sentence
         .trim()
         .charAt(0)
