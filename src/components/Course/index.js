@@ -9,7 +9,7 @@ const School = () => {
   const { schools, currentSchool, currentCourse } = useContext(SchoolContext);
   const school = schools.find(s => s.id === currentSchool);
   const course = school.courses.find(c => c.id === currentCourse);
-  let description = course.description
+  const description = course.description
     .toLowerCase()
     .split('.')
     .map((sentence, i) => {
