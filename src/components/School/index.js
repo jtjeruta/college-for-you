@@ -44,19 +44,23 @@ const School = () => {
               <Thumbnail source={school.thumbnail} large />
               <Text>{school.name}</Text>
             </View>
-            <Text style={{ marginLeft: 15, marginTop: 50, fontSize: 24 }}>
-              Location
-            </Text>
-            <TouchableHighlight
-              onPress={() => {
-                setModal(true);
-              }}
-            >
-              <Image
-                source={school.location}
-                style={{ height: 250, width: '100%' }}
-              />
-            </TouchableHighlight>
+            {school.location && (
+              <>
+                <Text style={{ marginLeft: 15, marginTop: 50, fontSize: 24 }}>
+                  Location
+                </Text>
+                <TouchableHighlight
+                  onPress={() => {
+                    setModal(true);
+                  }}
+                >
+                  <Image
+                    source={school.location}
+                    style={{ height: 250, width: '100%' }}
+                  />
+                </TouchableHighlight>
+              </>
+            )}
           </>
         )}
         <Text style={{ marginLeft: 15, marginTop: 50, fontSize: 24 }}>

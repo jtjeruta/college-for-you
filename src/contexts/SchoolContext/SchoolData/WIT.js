@@ -1,13 +1,13 @@
-// import Building from '../../../assets/schools/';
-// import Logo from '../../../assets/schools/';
+import Building from '../../../assets/schools/wit_building.jpg';
+import Logo from '../../../assets/schools/wit_logo.png';
 // import Location from '../../../assets/schools/';
 
 const data = {
-  id: 0,
-  name: '',
-  // thumbnail: Logo,
-  // image: Building,
-  motto: '',
+  id: 3,
+  name: 'Western Institute of Technology',
+  thumbnail: Logo,
+  image: Building,
+  motto: 'The Home of Learned Men',
   // location: Location,
   courses: [
     {
@@ -62,36 +62,31 @@ const data = {
     },
     {
       id: 10,
-      name: 'BS in Computer Engineering',
-      description: `The Bachelor of Science in Computer Engineering (BS CpE) is a five-year program that is a combination of electrical engineering and computer science. The curriculum provides students with a foundation in basic science, mathematics, software, and engineering. It covers topics on how to design a microprocessor and develop embedded systems that are used in desktops or handheld devices. The program also equips students with the ability to analyze, plan, design, install, operate and maintain digital devices, computer hardware, and software systems.`
-    },
-    {
-      id: 11,
       name: 'BS in Information Technology',
       description: `The Bachelor of Science in Information Technology (BS IT) is a four-year degree program that equips students with the basic ability to conceptualize, design and implement software applications. It prepares students to be IT professionals who are able to perform installation, operation, development, maintenance, and administration of computer applications. The goal of the program is to produce information technologists who can assist individuals and organizations in solving problems using information technology techniques and processes.`
     },
     {
-      id: 12,
+      id: 11,
       name: 'BS in Biology',
       description: `The Bachelor of Science in Biology is a four-year program that offers a general education in different biological sciences such as zoology, botany, physiology, genetics, histology, microbiology and ecology. The program also offers a strong foundation for advancement and specialization in biotechnology, genetic engineering, computational biology, genomics, molecular biology, and neurobiology. It grounds students with the fundamental concepts, principles, and theories of biological, natural, and physical sciences in research.`
     },
     {
-      id: 13,
+      id: 12,
       name: 'BS in Mathematicsg',
       description: `The Bachelor of Science in Mathematics (BSMath) is a four-year degree program designed to give students a background in mathematical modeling, scientific computing, and various modern applications of mathematics. The program covers major areas in pure mathematics exposure to mathematical applications in statistics, operation research, and actuarial science. It also teaches students the proper use of problem-solving approaches to investigate and understand mathematical content and analyze mathematical statements and construct solutions.`
     },
     {
-      id: 14,
+      id: 13,
       name: 'BS in Computer Education',
       description: `The BSEd major in Computer Technology Education program (BSED-CTE) prepares students for becoming effective educators of computer technology. The BSED-CTE program provides both academic and clinical preparation for prospective educators of computer in the secondary level. The program also includes training in the preparation of educational materials and appropriate teaching strategies.`
     },
     {
-      id: 15,
+      id: 14,
       name: 'AB in English',
       description: `The Bachelor of Arts in English (ABE) is a four-year degree program that centers on the theoretical aspects and practical applications of the English language and literature. Its curriculum is designed to equip students with proper knowledge and skills for them to become articulate English speakers and achieve a high level of English proficiency; and apply it government and law, education, media, business, and the industry as an official language of the Philippines.`
     },
     {
-      id: 16,
+      id: 15,
       name: 'AB in Political Science',
       description: `The Bachelor of Arts in English (ABE) is a four-year degree program that centers on the theoretical aspects and practical applications of the English language and literature. Its curriculum is designed to equip students with proper knowledge and skills for them to become articulate English speakers and achieve a high level of English proficiency; and apply it government and law, education, media, business, and the industry as an official language of the Philippines`
     }
