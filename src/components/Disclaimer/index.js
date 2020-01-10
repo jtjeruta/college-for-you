@@ -13,8 +13,8 @@ const Disclaimer = () => {
             <H1 style={{ textAlign: 'center' }}>Disclaimer</H1>
             <Text style={{ textAlign: 'center' }}>
               The following courses provided are from our data collection from
-              different the school websites. If the following courses have
-              errors, misinterpreted data, or outdated content please contact
+              different school websites. If the following courses have errors,
+              misinterpreted data, or outdated content please contact
               college4you.iloilo.ph@gmail.com.
             </Text>
             <View alignItems="center">
